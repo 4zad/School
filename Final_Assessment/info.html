@@ -1,0 +1,121 @@
+<!--
+	==================================================
+	Final Project
+	==================================================
+	Name    : Muhammad Ahmed
+	ID      : 146908207
+	Email   : mahmed224@myseneca.ca
+	Section : NAA
+	Date    : 05-08-2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information - Muhammad Ahmed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,800;0,600;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- css stylesheet should always go below all embeds to ensure they are loaded in before they may be used by the stylesheet -->
+    <link rel="stylesheet" href="normalize.css">
+    <script src="info.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <img src="images/logo.png" alt="Design Team Logo">
+        <img src="images/title.png" alt="Citrus Energy Shop">
+    </header>
+
+    <main id="form">
+        <div id="nav">
+            <ul>
+                <li><a href="honesty.html">Welcome</a></li>
+                <li><a href="info.html">User Information</a></li>
+                <li><a href="reflection.html">Reflection</a></li>
+            </ul>
+        </div>
+        <div id="body">
+            <form action="https://httpbin.org/post" method="post" id="form-input" onsubmit="return validate(this)">
+                <div id="form-title">
+                    <h2>Sign Up</h2>                    
+                </div>
+                <br><br>
+
+                <input type="hidden" name="lastName" id="lastName" value="Ahmed"/>
+                <input type="hidden" name="studentId" id="studentId" value="146908207"/>
+                <input required="required" type="text" pattern="^[A-Z]{1}[a-zA-Z]*$" name="first-name" id="first-name" placeholder="First Name"/>
+                <br>
+                <input required="required" type="text" pattern="^[A-Z]{1}[a-zA-Z]*$" name="last-name" id="last-name" placeholder="Last Name"/>
+                <br>  
+                <input required="required" type="text" name="username" id="username" minlength="6" placeholder="Username" />
+                <br>
+                <input required="required" type="password" name="password" id="password" minlength="6" maxlength="6" placeholder="Password"/>
+                <input required="required" type="password" name="confirm-password" id="confirm-password" minlength="6" maxlength="6" placeholder="Confirm Password"/>
+                <br>
+                <input required="required" type="email" name="email" id="email" placeholder="Email"/>
+                <br>
+                <input required="required" type="number" name="age" id="age" min="18" max="60" placeholder="Age"/>
+                <br>
+                <label for="education-level">Education Level</label><br>
+                <select required="required" name="education-level" id="education-level">
+                    <option value="" disabled selected>- select -</option>
+                    <option value="technical diploma">Technical Diploma</option>
+                    <option value="college diploma">College Diploma</option>
+                    <option value="bachelors degree">Bachelor's Degree</option>
+                    <option value="masters degree">Master's Degree</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+                <div id="radio">
+                    <p>Education Status</p>
+                    <input required="required" type="radio" value="graduated" name="education-status" id="graduated" />
+                    <label for="graduated" id="graduated-l">Graduated</label><br>
+                    <input required="required" type="radio" value="currently-enrolled" name="education-status"
+                        id="currently-enrolled" />
+                    <label for="currently-enrolled" id="currently-enrolled-l">Currently Enrolled</label><br>
+                    <input required="required" type="radio" value="did-not-graduate" name="education-status" id="did-not-graduate" />
+                    <label for="did-not-graduate" id="did-not-graduate-l">Did Not Graduate</label>
+                </div>
+                
+                <br><br>
+                <div id="form-buttons">
+                    <input type="reset" name="clear" value="Clear">
+                    <input type="submit" name="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div id="panel">
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div><img src="images/location.jpg" alt="Seneca College Location"></div>
+        <div>
+            <h2 class="bold">Seneca College</h2>
+            <ul>
+                <li>inquiries@senecacollege.ca</li>
+                <li>(416) 491-5050</li>
+                <li>1750 Finch Ave E, North York, ON</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="bold">Manager</h2>
+            <ul>
+                <li>mahmed224@myseneca.ca</li>
+                <li>(647) 778-9933</li>
+                <li><a href="https://github.com/4zad/School" target="_blank">github.com/4zad/School</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

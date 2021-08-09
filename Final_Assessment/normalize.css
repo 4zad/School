@@ -1,0 +1,306 @@
+/*
+	==================================================
+	Final Project
+	==================================================
+	Name    : Muhammad Ahmed
+	ID      : 146908207
+	Email   : mahmed224@myseneca.ca
+	Section : NAA
+	Date    : 05-08-2021
+*/
+
+/*CSS RESET*/
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*TEXT STYLE MODIFICATION CLASSES*/
+.bold
+{
+    font-weight: 600;
+}
+
+/*WEB PAGE BACKGROUND*/
+body
+{
+    background: rgb(93,85,69);
+    background: linear-gradient(90deg, rgba(93,85,69,1) 0%, rgba(156,124,76,1) 100%);
+}
+
+/*HEADER*/
+#header
+{
+    border: 7px solid #7C6848;
+    border-radius: 24px;
+    background-color: #3D4242;
+    height: 115px;
+    width: 99vw;
+    padding: 16px;
+}
+
+#header > img:nth-child(1) 
+{
+    height: 90%;
+    padding: 0px 24px;
+}
+
+#header > img:nth-child(2)
+{
+    height: 75%;
+    padding: 0px 32px 0px 0px;
+}
+
+/*MAIN SECTION - FORM PAGE*/
+#form 
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#form > div
+{
+    border: 7px solid #7C6848;
+    background-color: #3D4242;
+    margin: 16px;
+    min-height: 950px;
+    height: 125vh;
+}
+
+#form > div:nth-child(1)
+{
+    padding: 16px;
+    text-align: center;
+    font-family: 'work-sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#form > div:nth-child(1) > ul
+{
+    list-style: none;
+}
+
+#form > div:nth-child(1) > ul > li > a
+{
+    display: block; 
+    width: 100%;
+    padding: 12px 0px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #cccccc;
+}
+
+#form > div:nth-child(1) > ul > li > a:hover
+{
+    background-color: #cccccc;
+    color: #3D4242;
+}
+
+#form > div:nth-child(2)
+{
+    padding: 50px 100px;
+    text-align: left;
+    font-family: 'work-sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.35rem;
+    color: #cccccc;
+}
+
+#form > div:nth-child(2) > label
+{
+    padding: 8px;
+}
+
+#did-not-graduate-l, #currently-enrolled-l, #graduated-l
+{
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+#form-title
+{
+    font-family: 'noto-sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#form-buttons
+{
+    margin: 0;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+#form-buttons > input
+{
+    display: inline-block;
+    background-color: #cccccc;
+    border: none;
+    color: #3D4242;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: 'work-sans', sans-serif; 
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#form-buttons > input:hover
+{
+    background-color: #9C7C4C;
+    color: #3D4242;
+}
+
+#form-input > input
+{
+    padding: 10px 16px;
+    border-radius: 8px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 0 auto;
+    border:1px solid #3D4242;
+    font-family: 'work-sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#form > div:nth-child(3)
+{
+    padding: 24px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: #ff0000;
+}
+
+/*
+#form > div:nth-child(3) > p
+{
+    padding: 0px 0px 8px 0px;
+}
+*/
+
+/*MAIN SECTION - NON-FORM PAGES*/
+#non-form 
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#non-form > div
+{
+    border: 7px solid #7C6848;
+    background-color: #3D4242;
+    margin: 16px;
+    min-height: 1500px;
+    height: 100vh;
+}
+
+#non-form > div:nth-child(1)
+{
+    padding: 16px;
+    text-align: center;
+    font-family: 'work-sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#non-form > div:nth-child(1) > ul
+{
+    list-style: none;
+}
+
+#non-form > div:nth-child(1) > ul > li > a
+{
+    display: block; 
+    width: 100%;
+    padding: 12px 0px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #cccccc;
+}
+
+#non-form > div:nth-child(1) > ul > li > a:hover
+{
+    background-color: #cccccc;
+    color: #3D4242;
+}
+
+#non-form > div:nth-child(2)
+{
+    padding: 16px;
+    text-align: left;
+    font-family: 'work-sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #cccccc;
+}
+
+#non-form > div:nth-child(2) > p
+{
+    padding: 8px;
+}
+
+/*FOOTER*/
+#footer
+{
+    border: 7px solid #7C6848;
+    border-radius: 24px;
+    background-color: #3D4242;
+    height: 190px;
+    width: 99vw;
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    padding: 16px;
+}
+
+#footer > div:nth-child(1) > img
+{
+    display: block;
+    object-fit: cover;
+    object-position: center left;
+    width: 560px;
+    border-radius: 17px;
+}
+
+#footer > div:nth-child(2)
+{
+    text-align: right;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #DBA252;
+    padding: 16px 12px;
+}
+
+#footer > div:nth-child(3)
+{
+    text-align: left;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #DBA252;
+    padding: 16px 12px;
+}
+
+#footer ul 
+{
+    list-style: none;
+}
+
+#footer a
+{
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #DBA252;
+}
+
